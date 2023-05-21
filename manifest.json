@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "I green",
+    "version": "1.0",
+    "description": "Lê o tempo de tela para calculo do CO2 e compensar as emissões",
+    "permissions": ["activeTab", "scripting", "tabs", "storage"],
+    "action": {
+        "default_popup": "index.html"
+    },
+    "background.service_worke": {
+        "scripts": ["main.js"],
+        "persistent": true
+      },
+    "icons": {
+        "48": "assets/green.png",
+        "128": "assets/green.png"
+    }
+  }

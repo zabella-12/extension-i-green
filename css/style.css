@@ -1,0 +1,32 @@
+:root {
+    --primary-color: #215A6D;
+    --secondary-color: #DFECE6; 
+    --tertiary-color: #3CA2A2;
+    --quartenary-color:#2D2D29;
+
+}
+
+body{
+    width: 350px;
+    background-color: var(--secondary-color);
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: var(--quartenary-color);
+    font-size: 17px;
+}
+
+button {
+    border-radius: 9px;
+    border-style: none;
+    padding: 10px;
+    background-color: var(--primary-color) ;
+    color: var(--secondary-color);
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+}
+
+
+
+button:hover{
+    cursor: pointer;
+}
