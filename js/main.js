@@ -23,6 +23,8 @@ function updateTime() {
     var minutos = Math.round((elapsedSeconds % 3600) / 60);
     var segundos = elapsedSeconds % 60;
 
+    console.log("horas " + horas + " minutos " + (minutos/100))
+
     // Formata o resultado no formato de horas (HH:MM:SS)
     var resultadoFormatado = horas.toString().padStart(2, '0') + ':' +
         minutos.toString().padStart(2, '0') + ':' +
@@ -30,27 +32,25 @@ function updateTime() {
 
     runTime.innerText = `${resultadoFormatado}`
 
+//conversor de carbonização.
 
-
-    //calculo médio de CO²
-//65wattes / 8horas
-
-let gasto = 65 * horas
-let kWh =  gasto / 1000
-let CO = 0.0817 * kWh
-carbon.innerText = `${CO}`
-
-
-price.innerText = `${(CO * 150).toFixed(2)}`
-
+let gasto
+if(horas <= 0){
+    gasto =  65 * (minutos / 100)
+} else {
+    gasto = 65 * (horas + (minutos / 100))
 }
 
+let kWh =  gasto / 1000
+let CO = 0.0817 * kWh
+carbon.innerText = `${(CO).toFixed(6)}`
+price.innerText = `${(CO * 10).toFixed(2)}`
 
+// Função para limpar o tempo no localStorage
+window.addEventListener('beforeunload', function() {
+    // Calcular o tempo decorrido até o momento atual
+    var currentTime = new Date();
+    var elapsedSeconds = Math.round((currentTime - new Date(startTime)) / 1000);
+});
+}
 setInterval(updateTime, 1000);
-
-
-
-//calculo médio de CO²
-
-
-

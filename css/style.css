@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #215A6D;
+    --primary-color: #49B900;
     --secondary-color: #DFECE6; 
     --tertiary-color: #3CA2A2;
     --quartenary-color:#2D2D29;
@@ -13,6 +13,11 @@ body{
     text-align: center;
     color: var(--quartenary-color);
     font-size: 17px;
+    padding: 14px;
+}
+
+span {
+    font-size: 25px;
 }
 
 button {
@@ -25,8 +30,12 @@ button {
     font-size: 18px;
 }
 
-
-
 button:hover{
     cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.icon-info {
+    width: 15px;
+    padding-left: 10px;
 }
