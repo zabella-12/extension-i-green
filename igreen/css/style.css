@@ -1,0 +1,269 @@
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+.container-fluid {
+
+    padding: 50px;
+}
+
+main {
+    color: #47484B;
+}
+
+.p-icon {
+    width: 50px;
+}
+
+.section-one {
+    width: 95%;
+    height: 1000px;
+    padding: 50px;
+    display: flex;
+    align-items: top;
+    margin: auto;
+    gap: 200px;
+    justify-content: center;
+    background-image: url(../assets/tree.svg);
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.section-one h1 {
+    text-align: right;
+    width: 400px;
+    font-size: 64px;
+
+}
+
+.bird {
+    width: 500px;
+    height: 600px;
+}
+
+button.start {
+    margin-top: 50px;
+    width: 311px;
+    height: 53px;
+    left: 510px;
+    top: 645px;
+    border: none;
+    background: #202124;
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+}
+.service-img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.my-svg:hover  {
+    fill: #49B900;
+}
+
+.services .icon-box {
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 40px 0;
+    background: #fff;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 15px;
+    text-align: center;
+    border-bottom: 3px solid #fff;
+  }
+  
+  .services .icon-box:hover {
+    transform: translateY(-5px);
+    border-color: #49B900;
+  }
+  
+  .services .icon i {
+    font-size: 48px;
+    line-height: 1;
+    margin-bottom: 15px;
+    color: #49B900;;
+  }
+  
+  .services .title {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  
+  .services .title a {
+    color: #111;
+  }
+  
+  .services .description {
+    font-size: 15px;
+    line-height: 28px;
+    margin-bottom: 0;
+  }
+  
+
+
+.faq {
+  padding: 60px 0;
+}
+
+.faq .faq-list {
+  padding: 0;
+  list-style: none;
+}
+
+.faq .faq-list li {
+  border-bottom: 1px solid #eae7e5;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+
+.faq .faq-list .question {
+  display: block;
+  position: relative;
+  font-family: #eb5d1e;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 400;
+  font-weight: 600;
+  padding-left: 25px;
+  cursor: pointer;
+  color: #49B900;
+  transition: 0.3s;
+}
+
+.faq .faq-list i {
+  font-size: 16px;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.faq .faq-list p {
+  margin-bottom: 0;
+  padding: 10px 0 0 25px;
+}
+
+.faq .faq-list .icon-show {
+  display: none;
+}
+
+.faq .faq-list .collapsed {
+  color: #343a40;
+}
+
+.faq .faq-list .collapsed:hover {
+  color: #49B900;
+}
+
+.faq .faq-list .collapsed .icon-show {
+  display: inline-block;
+  transition: 0.6s;
+}
+
+.faq .faq-list .collapsed .icon-close {
+  display: none;
+  transition: 0.6s;
+}
+
+.section-title h2,h5{
+    text-align: center;
+}
+
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+  background: #fff;
+  padding: 60px 0;
+}
+
+.team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #343a40;
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .member-info {
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+.team .member .member-info-content {
+  position: absolute;
+  left: 50px;
+  right: 0;
+  bottom: 0;
+  transition: bottom 0.4s;
+}
+
+.team .member .member-info-content h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+.team .member .member-info-content span {
+  font-style: italic;
+  display: block;
+  font-size: 13px;
+  color: #fff;
+}
+
+.team .member .social {
+  position: absolute;
+  left: -50px;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  transition: left ease-in-out 0.3s;
+  background: rgba(78, 64, 57, 0.6);
+  text-align: center;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  display: block;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.team .member .social a:hover {
+  color: #eb5d1e;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  margin: 0 2px;
+}
+
+.team .member:hover .member-info {
+  background: linear-gradient(0deg, rgba(67, 114, 82, 0.95) 0%, rgba(57, 78, 61, 0.95) 15%, rgba(255, 255, 255, 0) 100%);
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.team .member:hover .member-info-content {
+  bottom: 30px;
+  transition: bottom 0.4s;
+}
+
+.team .member:hover .social {
+  left: 0;
+  transition: left ease-in-out 0.3s;
+}

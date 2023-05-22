@@ -1,0 +1,184 @@
+:root {
+
+    --color-body: #E3E3E3;
+    --container: #FFFEFE;
+    --card: #49B900;
+    --color-font: #FFFFFF;
+
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+
+
+.container-fluid {
+
+    padding: 50px;
+}
+
+main {
+    margin: auto;
+    width: 95%;
+}
+
+.container-one {
+    position: relative;
+    width: 765px;
+    height: 461px;
+    margin: 10% auto;
+    background-color: var(--container);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card {
+    position: absolute;
+    margin: -10% 20% 0 15.5%;
+    width: 525px;
+    height: 288px;
+    background-color: var(--card);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+
+
+
+
+.card-up {
+    display: flex;
+    width: 80%;
+    margin: 4% auto;
+    justify-content: space-between;
+
+}
+
+.card-data {
+    width: 90%;
+    margin: auto;
+}
+
+.card-data-two {
+    margin-top: 5%;
+    display: flex;
+    gap: 30px;
+
+}
+
+.holder {
+    flex-grow: 3;
+}
+
+.card-holder {
+    display: grid;
+}
+
+.card-expires {
+    display: grid;
+}
+
+p {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+
+h1 {
+    color: #FFFFFF;
+    letter-spacing: 5px;
+    font-size: 32px;
+}
+
+h4 {
+    color: #FFFFFF;
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+form {
+    margin: auto;
+    width: 90%;
+    padding-top: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0;
+    justify-content: space-around;
+
+}
+
+input {
+
+    height: 40px;
+    background: rgba(196, 196, 196, 0.16);
+    border-radius: 10px;
+    border: none;
+
+}
+
+#number-card,
+#holder {
+    width: 300px;
+}
+
+
+
+::-webkit-input-placeholder {
+
+    color: #000000b0;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+a {
+    color: var(--color-font);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.repo {
+    margin: 40px auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+    height: 35px;
+    background-color: var(--card);
+
+}
+
+button.checkout {
+   display: inherit;
+    width: 311px;
+    padding: 15px;
+    margin: 50px auto;
+    border: none;
+    background: #202124;
+    border-radius: 12px;
+    color: #ffffff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+}
+
+button.checkout:hover{
+    background-color: #00744E;
+    transition: 0.05s;
+}
+
+.pg{
+  font-size: 30px;
+  position: absolute;
+    align-items: center;
+    width: 500px;
+    margin: 50px auto;
+    color: #202124;
+    
+}
